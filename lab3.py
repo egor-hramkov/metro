@@ -5,8 +5,8 @@ from lab2 import do_10_series, do_100_series, do_1000_series
 def show_graphic_data(graph_data):
     plt.clf()
     plt.xlabel("N")
-    plt.xlabel("МГц")
-    plt.title(f'Частота процессора при N={len(graph_data)}, МГц')
+    plt.ylabel("МГц")
+    plt.title(f'Частота процессора при N={len(graph_data)}')
     plt.plot(graph_data)
     plt.legend()
     plt.show()
